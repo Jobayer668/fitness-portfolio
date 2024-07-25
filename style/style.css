@@ -75,72 +75,130 @@ nav ul li a{
     margin-top: 55px;
 }
 
-#banner div{
+#banner>div{
     width: 50%;
 }
 
 #banner-content{
-    padding-right: 50px;
+    padding-right: 35px;
 }
 
 #banner-content h1{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+}
 
+#banner-content p{
+    font-size: .7rem;
+    color: #c7c7c7;
+    line-height: 1.5;
+}
+
+#video{
+    display: flex;    
+    position: relative;
+}
+
+#workout{
+    position: absolute; 
+    top: 25%;
+    right: 35%;
+    padding: 10px 20px;
+    border: 1px solid #383838;
+    border-radius: 15px;
+    background: #62626229;
+    backdrop-filter: blur(8px);
+}
+#workout h3{
+    font-size: 25px;
+}
+#workout P{
+    font-size: 10px;
 }
 
 
-
-    /* picture */
-    .banner-profile-pic{
-        width: 580px;
-    }
-
-    /* main section  */
-    main{
-        max-width: 1140px;
-        margin: 0 auto;
-        padding: 130px 150px;
-        text-align: center;
-        margin-top: 80px;
-    }
-/* . secondary-bg{
-    background-color: aqua;
-    }      */
-    
-.section-title{
-    font-size: 35px;
-    font-weight: 700;
-    color: white;
+#tutorial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    bottom: 20%;
+    left: 3%;
+    padding: 10px 20px;
+    border: 1px solid #383838;
+    border-radius: 15px;
+    background: #62626229;
+    backdrop-filter: blur(8px);
 }
-.section-description{
-    font-size: 18px;
+
+#round-p{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: #c55d20;
+    margin-right: 10px;
+}
+
+#tutorial>div>h3{
+font-size: 20px;
+}
+#tutorial>div>p{
+    font-size: 10px;
+}
+
+button{
+    padding: 5px 20px;
+    border: 1px solid #383838;
+    border-radius: 50px;
+    background: none;
+    color: #ffffff;
+}
+#btn{
+    background-color: #c55d20;
+}
+
+
+/* main section  */
+main{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* about styles */
 .about{
-    border-radius: 10px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-/* 4 images work */
-.img-item{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 130px;
-    }
-.img-description{
-    font-weight: 600;
-}
-.radius{
-    border-radius: 50px;
-    border: none;
+#change{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-/* .img-responsive{
-    display: flex;
-    justify-content: space-between;
-} */
-
-.started{
-    display: flex;
+#change h3, #change p{
     text-align: center;
+}
+
+#img-item{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+#img-item img{
+    border-radius: 50%;
+}
+
+#img-item p{
+    font-size: .7rem;
+    color: #a1a1a1;
 }
