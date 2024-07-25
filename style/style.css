@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Inter;
+    background-color: #000000;
+    color: #f0f0f0;
+}    
+
+.dif-font{
+    font-family: Dancing Script;
+}
+
+header{
+    padding: 20px 120px;background-image: linear-gradient(to bottom, #000000, #363636, #000000);
+}
+
+/* nav styles */
+
+#nav-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-div h6{
+    font-size: 2.5rem;
+    color: #c53a04;
+    font-style: italic;
+}
+
+nav{
+    font-size: .8rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 50px;
+}
+
+nav ul{
+    display: flex;
+    margin: 2px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+}
+
+.primary-color{
+    background-color: #aa3803;
+    color: white;
+    border-radius: 50px;
+}
+
+/* banner-style */
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+#banner div{
+    width: 50%;
+}
+
+#banner-content{
+    padding-right: 50px;
+}
+
+#banner-content h1{
+    font-size: 3.5rem;
+
+}
+
+
+
+    /* picture */
+    .banner-profile-pic{
+        width: 580px;
+    }
+
+    /* main section  */
+    main{
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 130px 150px;
+        text-align: center;
+        margin-top: 80px;
+    }
+/* . secondary-bg{
+    background-color: aqua;
+    }      */
+    
+.section-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+.section-description{
+    font-size: 18px;
+}
+
+/* about styles */
+.about{
+    border-radius: 10px;
+}
+
+/* 4 images work */
+.img-item{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 130px;
+    }
+.img-description{
+    font-weight: 600;
+}
+.radius{
+    border-radius: 50px;
+    border: none;
+}
+
+/* .img-responsive{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.started{
+    display: flex;
+    text-align: center;
+}
