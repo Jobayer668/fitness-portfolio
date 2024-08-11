@@ -155,6 +155,7 @@ button{
 }
 #btn{
     background-color: #c55d20;
+    margin-top: 15px;
 }
 
 
@@ -163,7 +164,7 @@ main{
     width: 70%;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -202,3 +203,343 @@ main{
     font-size: .7rem;
     color: #a1a1a1;
 }
+
+
+/* third part */
+#banner-secondary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+    background: #262b28;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+
+}
+
+#extra{
+    width: 40%;
+}
+
+#run{
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;    
+    background: url(../images/run.jpg);
+    background-size: 250%;
+    background-position: 65% 25%;
+}
+#extra h1{
+margin-bottom: 10px;
+}
+
+    .row{
+        height: 400px;
+        display: flex;
+        gap: 5px;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+
+    /* BMI Calculator */
+    #calculator{
+        width: 100%;
+        background: #292929;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #bmihead{
+        width: 50%;
+        margin: 20px 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #calculatordiv{
+        width: 70%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    #calculatordiv>div:first-child{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #calculatordiv>div:nth-child(2){
+        width: 60%;
+    }
+    
+    #calculatordiv>div:first-child h4{
+        font-size: 1.2rem;
+    }
+    
+    #calculatordiv table{
+        border-collapse: collapse;
+    }
+    
+    #calculatordiv th,#calculatordiv td{
+        border: 1px solid #303030;
+        font-size: .8rem;
+        padding: 10px;
+        text-align: start;
+        width: 100px !important;
+    }
+    
+    #calculatordiv td{
+        font-size: .6rem;
+    }
+    
+    #factor{
+        grid-area: factor;}
+    
+    #bmiForm{
+        margin-top: 20px;
+        display: grid;
+        grid-template-areas: ' . . ' ' . . ' ' factor factor ' ' . . ';
+        gap: 10px;
+    }
+    
+    #calculatordiv input{
+        border-radius: 5px;
+        background: #4a4949;
+        border: none;
+        padding: 10px 15px;
+        font-size: .7rem;
+        color: #d7d4d4;
+        outline: none;
+    }
+    
+    #calculatordiv select{
+        border-radius: 5px;
+        background: #4a4949;
+        border: none;
+        padding: 10px 15px;
+        font-size: .7rem;
+        color: #d7d4d4;
+        outline: none;
+    }
+    
+    #calculatordiv option{
+        border: none;
+        padding: 10px;
+        color: #d7d4d4;
+    }
+    
+    
+    /* Meet Our Team */
+    #team>div:first-child{
+        width: 60%;
+        margin: 100px 20% 50px;
+    }
+    
+    #team>div:first-child h3, #team>div:first-child p{
+        text-align: center;
+    }
+    
+    #team>div:nth-child(2){
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        background: #111;
+        border-radius: 25px;
+    }
+    
+    #team>div:nth-child(2)>div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #team>div:nth-child(2)>div>div{
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+    
+    #team>div:nth-child(2)>div>div h4{
+        font-size: .8rem;
+        text-align: left;
+    }
+    
+    #team>div:nth-child(2)>div>div p{
+        font-size: .6rem;
+        margin-top: 5px;
+        text-align: left;
+        opacity: .75;
+    }
+    
+    #team>div:nth-child(2) img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 15px;
+        transition: all .3s ease-in-out;
+    }
+    
+    #team>div:nth-child(2) img:hover{    
+        filter: hue-rotate(247deg);
+        transition: all .3s ease-in-out;
+    }
+    
+    /* .team-section{
+        margin-bottom: 60px;
+    }
+    .team-main{
+        width: 80%;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 18px;
+    }
+    .team-box{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0 5px 0;
+    }
+    #box-2{
+        padding-bottom: 30px;
+    }
+    .team h3{
+        color: white;
+        font-size: 1.360rem;
+        font-weight: 700;
+    }
+    .team p{
+        color: #afa7a7ce;
+    }
+    .team{
+        width: 330px;
+        height: 275px;
+    }
+    .trainer{
+        padding: 215px 0 0 20px;
+    }
+    .team-1{
+        background-image: url(../images/trainer1.png);
+        background-color: rgba(0, 0, 0, 0.205);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        border-radius: 18px;
+    }
+    .team-2{
+        background-image: url(../images/trainer2.png);
+        background-color: rgba(0, 0, 0, 0.205);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        border-radius: 18px;
+    }
+    .team-3{
+        background-image: url(../images/trainer3.png);
+        background-color: rgba(0, 0, 0, 0.205);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        border-radius: 18px;
+    }
+    .team-4{
+        background-image: url(../images/trainer4.png);
+        background-color: rgba(0, 0, 0, 0.205);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        border-radius: 18px;
+    }
+    .team-5{
+        background-image: url(../images/trainer5.png);
+        background-color: rgba(0, 0, 0, 0.205);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        border-radius: 18px;
+    }
+    .team-6{
+        background-image: url(../images/trainer6.png);
+        background-color: rgba(0, 0, 0, 0.205);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        border-radius: 18px;
+    } */
+
+
+    /* footer section */
+    footer{
+        background: rgba(255, 255, 255, 0.1);
+        padding: 70px 0 40px;
+    }
+    .footer{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer p{
+        color: white;
+        width: 60%;
+    }
+    .footer-logo{
+        width: 47%;
+    }
+    .footer-menu{
+        width: 24%;
+    }
+    .footer-menu-2{
+        width: 24%;
+    }
+    .footer h2{
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5%;
+    }
+    .footer-item li{
+        margin-top: 17px;
+        list-style: none;
+    }
+    .footer-item a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .footer-logo h2{
+        font-size: 2.25rem;
+        font-weight: 800;
+        line-height: 120%;
+        color: rgb(230, 83, 60);
+    }
+    .footer-border{
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        width: 80%;
+        margin: 40px auto;
+    }
+    .copyright{
+        color: rgba(255, 255, 255, 0.5);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .copyright h2{
+        font-size: 1.063rem;
+    }
+    
