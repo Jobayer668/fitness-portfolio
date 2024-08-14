@@ -246,92 +246,93 @@ margin-bottom: 10px;
 
     /* BMI Calculator */
     #calculator{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         background: #292929;
         margin-top: 80px;
+    }
+    
+    #headline{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    
-    #bmihead{
         width: 50%;
         margin: 20px 25%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     
-    #calculatordiv{
+    #tablediv{
+        flex-direction: row;
+        justify-content: flex-start;
         width: 70%;
         margin: 20px auto;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
     }
     
-    #calculatordiv>div:first-child{
+    #tablediv>div:first-child{
         width: 40%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
     
-    #calculatordiv>div:nth-child(2){
+    #tablediv>div:nth-child(2){
         width: 60%;
     }
     
-    #calculatordiv>div:first-child h4{
+    #tablediv>div:first-child h4{
         font-size: 1.2rem;
     }
     
-    #calculatordiv table{
+    #tablediv table{
         border-collapse: collapse;
     }
     
-    #calculatordiv th,#calculatordiv td{
-        border: 1px solid #303030;
-        font-size: .8rem;
+    #tablediv th,#tablediv td{
         padding: 10px;
         text-align: start;
-        width: 100px !important;
+        width: 100px;
+        border: 1px solid #303030;
+        font-size: .8rem;
     }
     
-    #calculatordiv td{
+    #tablediv td{
         font-size: .6rem;
     }
     
     #factor{
         grid-area: factor;}
     
-    #bmiForm{
-        margin-top: 20px;
+    #tableForm{
         display: grid;
         grid-template-areas: ' . . ' ' . . ' ' factor factor ' ' . . ';
         gap: 10px;
+        margin-top: 20px;
     }
     
-    #calculatordiv input{
-        border-radius: 5px;
-        background: #4a4949;
+    #tablediv input{
         border: none;
         padding: 10px 15px;
         font-size: .7rem;
         color: #d7d4d4;
         outline: none;
-    }
-    
-    #calculatordiv select{
         border-radius: 5px;
         background: #4a4949;
+    }
+    
+    #tablediv select{
         border: none;
         padding: 10px 15px;
         font-size: .7rem;
         color: #d7d4d4;
         outline: none;
+        border-radius: 5px;
+        background: #4a4949;
     }
     
-    #calculatordiv option{
+    #tablediv option{
         border: none;
         padding: 10px;
         color: #d7d4d4;
@@ -339,149 +340,61 @@ margin-bottom: 10px;
     
     
     /* Meet Our Team */
-    #team>div:first-child{
+    #meet>div:first-child{
         width: 60%;
         margin: 100px 20% 50px;
     }
     
-    #team>div:first-child h3, #team>div:first-child p{
+    #meet>div:first-child h3, #team>div:first-child p{
         text-align: center;
     }
     
-    #team>div:nth-child(2){
-        padding: 25px;
-        display: grid;
+    #meet>div:nth-child(2){
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
         background: #111;
         border-radius: 25px;
+        padding: 25px;
+        display: grid;
     }
     
-    #team>div:nth-child(2)>div{
+    #meet>div:nth-child(2)>div{
         position: relative;
         display: flex;
         flex-direction: column;
     }
     
-    #team>div:nth-child(2)>div>div{
+    #meet>div:nth-child(2)>div>div{
         position: absolute;
         left: 20px;
         bottom: 20px;
     }
     
-    #team>div:nth-child(2)>div>div h4{
+    #meet>div:nth-child(2)>div>div h4{
         font-size: .8rem;
         text-align: left;
     }
     
-    #team>div:nth-child(2)>div>div p{
-        font-size: .6rem;
-        margin-top: 5px;
+    #meet>div:nth-child(2)>div>div p{
         text-align: left;
         opacity: .75;
+        font-size: .6rem;
+        margin-top: 5px;
     }
     
-    #team>div:nth-child(2) img{
-        width:100%;
-        height:100%;
+    #meet>div:nth-child(2) img{
         object-fit: cover;
         overflow: hidden;
         border-radius: 15px;
         transition: all .3s ease-in-out;
+        width:100%;
+        height:100%;
     }
     
-    #team>div:nth-child(2) img:hover{    
+    #meet>div:nth-child(2) img:hover{    
         filter: hue-rotate(247deg);
         transition: all .3s ease-in-out;
     }
-    
-    /* .team-section{
-        margin-bottom: 60px;
-    }
-    .team-main{
-        width: 80%;
-        margin: 0 auto;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 18px;
-    }
-    .team-box{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px 0 5px 0;
-    }
-    #box-2{
-        padding-bottom: 30px;
-    }
-    .team h3{
-        color: white;
-        font-size: 1.360rem;
-        font-weight: 700;
-    }
-    .team p{
-        color: #afa7a7ce;
-    }
-    .team{
-        width: 330px;
-        height: 275px;
-    }
-    .trainer{
-        padding: 215px 0 0 20px;
-    }
-    .team-1{
-        background-image: url(../images/trainer1.png);
-        background-color: rgba(0, 0, 0, 0.205);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
-        background-size: cover;
-        border-radius: 18px;
-    }
-    .team-2{
-        background-image: url(../images/trainer2.png);
-        background-color: rgba(0, 0, 0, 0.205);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
-        background-size: cover;
-        border-radius: 18px;
-    }
-    .team-3{
-        background-image: url(../images/trainer3.png);
-        background-color: rgba(0, 0, 0, 0.205);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
-        background-size: cover;
-        border-radius: 18px;
-    }
-    .team-4{
-        background-image: url(../images/trainer4.png);
-        background-color: rgba(0, 0, 0, 0.205);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
-        background-size: cover;
-        border-radius: 18px;
-    }
-    .team-5{
-        background-image: url(../images/trainer5.png);
-        background-color: rgba(0, 0, 0, 0.205);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
-        background-size: cover;
-        border-radius: 18px;
-    }
-    .team-6{
-        background-image: url(../images/trainer6.png);
-        background-color: rgba(0, 0, 0, 0.205);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
-        background-size: cover;
-        border-radius: 18px;
-    } */
-
 
     /* footer section */
     footer{
@@ -542,4 +455,9 @@ margin-bottom: 10px;
     .copyright h2{
         font-size: 1.063rem;
     }
+
+    
+    
+    
+    
     
